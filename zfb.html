@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+	<script type="text/javascript">
+	function copyUrl2()
+	    {
+	        var Url2=document.getElementById("biao1").innerText;
+	        var oInput = document.createElement('input');
+	        oInput.value = Url2;
+	        document.body.appendChild(oInput);
+	        oInput.select(); // 选择对象
+	        document.execCommand("Copy"); // 执行浏览器复制命令
+	        oInput.className = 'oInput';
+	        oInput.style.display='none';
+	       
+	    }
+	</script> 
+
+<style>
+	.touch{
+		position: fixed;
+		margin-top:35%;
+		margin-left: 15%;
+		display: block;
+		
+		z-index: 999;
+	}
+
+	.touch-pc{
+	    position: fixed;
+    display: block;
+    z-index: 999;
+    margin-top: 120px;
+    margin-left: 500px; 
+	}
+
+	.touch .close{
+  top: 31px;
+    right: -8px;
+    width: 38px;
+    position: absolute;
+    opacity: 1.7;
+   
+	}
+
+	.touch-pc .close{
+ 	top: -18px;
+    right: -38px;
+    width: 38px;
+    position: absolute;
+    opacity: .7;
+   
+	}
+
+	@media screen and (min-width: 700px) {
+    .touch{
+        display: none;
+    }
+.touch-pc{
+       
+    }
+
+}
+
+	@media screen and (max-width: 700px) {
+    .touch-pc{
+        display: none;
+    }
+} 
+
+</style>
+
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+        $(".touch .bao").click(function(event) {
+            
+        alert("领取成功！打开支付宝app查看红包金额！");
+            $("a.touch").css({
+                display: 'none'
+            });
+        });
+
+        $(".touch .close").click(function(event) {
+            $(".touch").hide();
+        });
+
+            $(".touch-pc .close").click(function(event) {
+              $(".touch-pc").hide();
+        });
+
+    </script>
+    		 <div cols="20" style="color:white" id="biao1">支付宝发红包啦！即日起还有机会额外获得余额宝消费红包！长按复制此消息，打开最新版支付宝就能领取！bfryPu14Uu
+</div>
+
+        <a class="touch" onclick="copyUrl2()">
+            <img class="bao" src="http://7xpa61.com1.z0.glb.clouddn.com/alipay.gif" width="240px" height="240px">
+            <img class="close" src="http://www.bcoder.cn/close.png" alt="">
+        </a>
+
+        <a class="touch-pc">
+        	<h2 style="color:red;">支付宝红包新福利！</h2>
+            <img class="bao" src="http://7xpa61.com1.z0.glb.clouddn.com/wqs.jpg" width="200px" height="284px">
+            <img class="close" src="http://www.bcoder.cn/close.png" alt="">
+        </a>
+
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+        $(".touch .bao").click(function(event) {
+            
+        alert("领取成功！打开支付宝app查看红包金额！");
+            $("a.touch").css({
+                display: 'none'
+            });
+        });
+
+        $(".touch .close").click(function(event) {
+            $(".touch").hide();
+        });
+
+            $(".touch-pc .close").click(function(event) {
+              $(".touch-pc").hide();
+        });
+
+    </script>
+
+</body>
+</html>
