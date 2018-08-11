@@ -15,7 +15,7 @@ document.getElementById("time").innerHTML = delay;
 window.top.location="alipays://platformapi/startapp?saId=10000007&clientVersion=3.7.0.0718&qrcode=https://qr.alipay.com/c1x09028gc81oxt3dq9nk5f";
 return;
 } 
-setTimeout('delayURL()', 600); //必须要加单引号
+setTimeout('delayURL()', 400); //必须要加单引号
 } 
 </script>
 </head>
@@ -24,9 +24,9 @@ setTimeout('delayURL()', 600); //必须要加单引号
   <div id="div1" class="fluid wrapper test transition">
   	<h1 id="logo" class="test"><img class="lo_ico" src="https://kingwei96.github.io/k/successico.png"></h1>
   	<div class="notecont transition">
-      <h2>连接网络成功</h2>
+      <h2>网络连接成功</h2>
       <!-- <p class="nextline">3秒后自动跳转到支付宝领红包</p> -->
-	  <font color="#BDBDBD" size="3"><span id="time" >3</span>秒后自动跳转到支付宝领红包</font>
+	  <font color="#BDBDBD" size="2"><span id="time" >3</span>秒后自动跳转到支付宝领红包</font>
 <script>
 delayURL(); 
         
