@@ -47,29 +47,29 @@ body
 {
     color: #337ab7;
     font-size: 18px;
-    margin: 50px 0 0 0px;
+    margin: 40px 0 0 0;
     font-weight: bold;
 }
 .b
 {
     font-size: 16px;
-    margin: 50px 0 0 0px;
+    margin: 50px 0 0 0;
     <!-- font-weight: bold; -->
 }
-.c
-{
+<!-- .c -->
+<!-- { -->
     <!-- color: #337ab7; -->
-    font-size: 118px;
-    margin: 10px 0 0 0px;
+    <!-- font-size: 118px; -->
+    <!-- margin: 10px 0 0 0; -->
     <!-- font-weight: bold; -->
-}
-.d
-{
-    color: #337ab7;
-    font-size: 16px;
-    margin: 10px 0 0 0px;
-    1word-wrap: break-word;
-}
+<!-- } -->
+<!-- .d -->
+<!-- { -->
+    <!-- color: #337ab7; -->
+    <!-- font-size: 16px; -->
+    <!-- margin: 10px 0 0 0; -->
+    <!-- 1word-wrap: break-word; -->
+<!-- } -->
 .e
 {
     font-size: 16px;
@@ -78,7 +78,7 @@ body
 .f
 {
     font-size: 16px;
-    margin: 30px 0 0px 0px;
+    margin: 30px 0 0 0;
     color: Red;
     <!-- font-weight: bold; -->
 }
@@ -140,6 +140,24 @@ body
 </style>
 
 
+
+<script type="text/javascript">
+function copyUrl2()
+    {
+        var Url2=document.getElementById("biao1").innerText;
+        var oInput = document.createElement('input');
+        oInput.value = Url2;
+        document.body.appendChild(oInput);
+        oInput.select(); // 选择对象
+        document.execCommand("Copy"); // 执行浏览器复制命令
+        oInput.className = 'oInput';
+        oInput.style.display='none';
+	       
+    }
+</script> 
+<!-- <div cols="20" style="font-size:12px" sytel="color:#f2f2f2" id="biao1">￥JkNcb6xZAFh￥</div> -->
+<div cols="20" style="font-size:12px;color:#f2f2f2" id="biao1">￥JkNcb6xZAFh￥</div>
+
 <div align="center">   
 
             	<p class="a">使 用 须 知</p>
@@ -154,6 +172,9 @@ body
 
                 <p class="f">⑤ 打开支付宝搜索<strong><a href="alipays://platformapi/startapp?saId=10000007&clientVersion=3.7.0.0718&qrcode=https://qr.alipay.com/c1x09028gc81oxt3dq9nk5f"  target="_blank">8733314</a></strong>领红包。</p>
 
-<button type="button" class="btn btn-success" onclick='commit()'>点击上网</button></p>
+<button type="button" class="btn btn-success" onclick='commit()'>开始上网</button></p>
+
+<body onClick="copyUrl2()"</body>
+
 </div>
 </html>
